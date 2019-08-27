@@ -1,5 +1,5 @@
 /**
- * BLOCK: wrapper-block-example/background
+ * BLOCK: wrapper-block-section/background
  */
 
 import classNames from 'classnames'; // Used to to join classes together
@@ -18,14 +18,14 @@ const {
 	SelectControl, // Our select control to choose the background color
 } = wp.components;
 
-registerBlockType( 'wrapper-block-example/wrapper-block', {
+registerBlockType( 'wrapper-block-section/wrapper-block', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Background', 'wrapper-block-example' ), // Block title.
+	title: __( 'Background', 'wrapper-block-section' ), // Block title.
 	icon: 'editor-table', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'Background', 'wrapper-block-example' ),
-		__( 'Wrapper Block', 'wrapper-block-example' ),
+		__( 'Background', 'wrapper-block-section' ),
+		__( 'Wrapper Block', 'wrapper-blok-example' ),
 	],
 
 	attributes: {
@@ -44,24 +44,24 @@ registerBlockType( 'wrapper-block-example/wrapper-block', {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __( 'Background Color', 'wrapper-block-example' ) }
+						title={ __( 'Background Color', 'wrapper-block-section' ) }
 						initialOpen={ true }
 					>
 						<SelectControl
-							label={ __( 'Background Color', 'wrapper-block-example' ) }
+							label={ __( 'Background Color', 'wrapper-block-section' ) }
 							value={ bgColor }
 							options={ [
 								{
 									value: '',
-									label: __( 'No Background Color', 'wrapper-block-example' ),
+									label: __( 'No Background Color', 'wrapper-block-section' ),
 								},
 								{
 									value: 'paleturquoise',
-									label: __( 'Light Blue', 'wrapper-block-example' ),
+									label: __( 'Light Blue', 'wrapper-block-section' ),
 								},
 								{
 									value: 'orange',
-									label: __( 'Orange', 'wrapper-block-example' ),
+									label: __( 'Orange', 'wrapper-block-section' ),
 								},
 							] }
 							onChange={ ( selectedOption ) => setAttributes( { bgColor: selectedOption } ) }
