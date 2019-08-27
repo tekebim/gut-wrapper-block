@@ -1,9 +1,8 @@
 <?php
 /**
- * Plugin Name: Wrapper Block Example
- * Description: Example how to create a wrapper block for Gutenberg in WordPress.
- * Author: Liip AG
- * Author URI: https://liip.ch
+ * Plugin Name: Block Section Gutenberg
+ * Description: Section block for Gutenberg in WordPress.
+ * Author: Custom
  * Version: 1.0.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
