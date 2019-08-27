@@ -1,7 +1,7 @@
 {
   "name": "wrapper-block-section",
   "version": "1.0.0",
-  "description": "Example how to create a wrapper block for Gutenberg in WordPress",
+  "description": "Section block for Gutenberg in WordPress",
   "scripts": {
     "start": "parcel watch --no-hmr assets/js/wrapper-block-section.js -d dist",
     "build": "parcel build assets/js/wrapper-block-section.js -d dist",
